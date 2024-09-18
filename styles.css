@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Phone container with a black border */
+  .phone-container {
+    background-color: #fff;
+    border: 5px solid black; /* Adding a thick black border */
+    border-radius: 30px;
+    height: 600px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Gen Z inspired background color inside the phone */
+  .screen {
+    padding: 20px;
+    position: relative;
+    flex-grow: 1;
+    background-color: #ffccf9; /* Soft pink color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Chat container for messages */
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 50px; /* Space for input field */
+  }
+  
+  /* Message bubbles styling */
+  .message {
+    margin: 5px 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 80%;
+    animation: bubble-animation 0.5s ease-in-out;
+    word-wrap: break-word;
+  }
+  
+  .user-message {
+    background-color: #c0e4f4; /* Light blue for user messages */
+    align-self: flex-end;
+    text-align: right;
+  }
+  
+  .bot-message {
+    background-color: #f4c0e4; /* Light pink for bot messages */
+    align-self: flex-start;
+    text-align: left;
+  }
+  
+  /* Bubble animation */
+  @keyframes bubble-animation {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Input container styling */
+  .input-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input field styling */
+  input {
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: calc(100% - 60px); /* Adjust width to make space for button */
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  /* Send button styling */
+  button {
+    border: none;
+    background-color: #ff007f; /* Bright pink for send button */
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Fixed width for button */
+  }
+  
+  button:focus {
+    outline: none;
+  }

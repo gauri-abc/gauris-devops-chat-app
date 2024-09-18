@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Phone container with a black border */
+  .phone-container {
+    background-color: #fff;
+    border: 5px solid black; /* Adding a thick black border */
+    border-radius: 30px;
+    height: 600px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Gen Z inspired background color inside the phone */
+  .screen {
+    padding: 20px;
+    position: relative;
+    flex-grow: 1;
+    background-color: #ffccf9; /* Soft pink color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Welcome text centered and with new font style */
+  #welcome-message p {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Change to a playful font */
+    font-size: 20px;
+    color: #4c4c4c;
+    margin: 0;
+  }
+  
+  /* Arrow position below the text with new font style */
+  .arrow {
+    cursor: pointer;
+    color: #ff007f; /* Bold pink color for the arrow */
+    font-family: 'Arial Black', sans-serif; /* A bold, modern font */
+    font-size: 18px;
+    margin-top: 20px; /* Space between welcome text and arrow */
+    text-align: center;
+  }
+  
+  /* Chat container hidden initially */
+  .chat-container.hidden,
+  input.hidden {
+    display: none;
+  }
+  
+  /* Input field style */
+  input {
+    border: none;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    outline: none;
+    box-sizing: border-box;
+  }
